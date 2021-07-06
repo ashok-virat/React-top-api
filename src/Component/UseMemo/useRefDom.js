@@ -13,8 +13,12 @@ const UseRefDom = () => {
 
   return (
     <div style={{ marginTop: "20px" }} ref={elementRef}>
-      <h3> use Ref Dom</h3>
+      <h3> use Ref Dom </h3>
       <br />
+      <p>
+        click the focus the input button.you can the backgroud color of div and
+        focus the input using useRefEf
+      </p>
       <input ref={inputRef}></input>
       <button onClick={focusTheButton}>Focus The Input</button>
     </div>
