@@ -1,35 +1,37 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "./style.css";
 
 const Home = () => {
   return (
     <div>
-      <div
-        style={{
-          width: "100%",
-          backgroundColor: "black",
-          height: "60px",
-          marginTop: "0",
-        }}
-      >
+      <h1> React Top Level Api</h1>
+      <div>
         <ul>
-          <li
-            style={{
-              cursor: "pointer",
-              listStyleType: "none",
-              verticalAlign: "middle",
-              paddingTop: "18px",
-            }}
-          >
+          <li>
             {" "}
             <Link
               to="/useMemo"
               style={{
                 textDecoration: "none",
-                color: "white",
+                color: "blue",
               }}
+              className={"changeColor"}
             >
-              React Top Level Api
+              usememo and usecallback
+            </Link>
+          </li>
+          <li>
+            {" "}
+            <Link
+              to="/useContext"
+              style={{
+                textDecoration: "none",
+                color: "blue",
+              }}
+              className={"changeColor"}
+            >
+              useContext
             </Link>
           </li>
         </ul>
