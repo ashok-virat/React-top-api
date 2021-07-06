@@ -2,6 +2,7 @@ import React, { useRef } from "react";
 
 const UseRefDom = () => {
   const elementRef = useRef();
+  //class based component we have used create ref instead of use ref
   const inputRef = useRef();
 
   const focusTheButton = () => {

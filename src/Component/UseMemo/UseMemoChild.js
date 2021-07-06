@@ -1,4 +1,4 @@
-import React, { memo } from "react";
+import React, { memo, Fragment } from "react";
 import UseRefDom from "./useRefDom";
 
 const UseMemoChild = memo((props) => {
@@ -7,12 +7,17 @@ const UseMemoChild = memo((props) => {
   //see the console
   console.log("use memo child render");
   return (
-    <div>
-      <h3>ChildComponent</h3>
+    //Fragments let you group a list of children without adding extra nodes to the DOM.
+    <Fragment>
+            <h3>ChildComponent</h3>
+      <p>
+        we have used fragment for this use memo child component. Fragments let
+        you group a list of children without adding extra nodes to the DOM.
+      </p>
       <button onClick={decreaseCount}>decreaseParentCount</button>
       <br />
       <UseRefDom />
-    </div>
+    </Fragment>
   );
 });
 
