@@ -1,4 +1,4 @@
-import React, { useState, useCallback, useMemo } from "react";
+import React, { useState, useCallback, useMemo, useRef } from "react";
 import UseMemoChild from "./UseMemoChild";
 
 const useMemoParent = () => {
@@ -8,10 +8,18 @@ const useMemoParent = () => {
     message: "hi ashok",
   });
 
+  //use ref updates.does not trigger the component re render
+  const referenceValue = useRef(0);
+
+  const handleUseRef = () => {
+    referenceValue.current++;
+    console.log(`use ref value updated ${referenceValue.current} clicked`);
+  };
+
   const increaseCount = () => {
     setCount({
       ...count,
-      count: count.count + 1,
+      count: count.count +1,
       message:
         count.count === 3 ? "see the console _use memo called_" : "hi ashok",
     });
@@ -38,6 +46,10 @@ const useMemoParent = () => {
       <h1>Count:{count.count}</h1>
       <h3 style={{ color: "red" }}>{getCount}</h3>
       <button onClick={increaseCount}>InCrease Count</button>
+      <br></br>
+      <button onClick={handleUseRef} style={{ marginTop: "10px" }}>
+        useref
+      </button>
       <UseMemoChild decreaseCount={decreaseCount}></UseMemoChild>
     </div>
   );

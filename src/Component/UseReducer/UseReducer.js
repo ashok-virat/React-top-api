@@ -21,6 +21,7 @@ const UseReducerParent = () => {
 
   return (
     <div>
+    <h2>using use reducer for state management</h2>
       Count: {state.count}
       <button
         onClick={() =>

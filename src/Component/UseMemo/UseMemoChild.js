@@ -1,4 +1,5 @@
 import React, { memo } from "react";
+import UseRefDom from "./useRefDom";
 
 const UseMemoChild = memo((props) => {
   const { decreaseCount } = props;
@@ -9,6 +10,8 @@ const UseMemoChild = memo((props) => {
     <div>
       <h3>ChildComponent</h3>
       <button onClick={decreaseCount}>decreaseParentCount</button>
+      <br />
+      <UseRefDom />
     </div>
   );
 });
