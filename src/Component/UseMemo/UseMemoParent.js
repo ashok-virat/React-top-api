@@ -35,9 +35,8 @@ const useMemoParent = () => {
   return (
     <div>
       <h1>Count:{count.count}</h1>
-      <h3 style={{ color: "red" }}>{getCount}</h3>
       <button onClick={increaseCount}>InCrease Count</button>
-      <UseMemoChild decreaseCount={decreaseCount}></UseMemoChild>
+      <UseMemoChild decreaseCount={decreaseCount} getCount={getCount}></UseMemoChild>
     </div>
   );
 };
