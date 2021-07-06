@@ -34,6 +34,19 @@ const Home = () => {
               useContext
             </Link>
           </li>
+          <li>
+            {" "}
+            <Link
+              to="/useReducer"
+              style={{
+                textDecoration: "none",
+                color: "blue",
+              }}
+              className={"changeColor"}
+            >
+              useReducer
+            </Link>
+          </li>
         </ul>
       </div>
     </div>
