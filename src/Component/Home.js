@@ -47,6 +47,19 @@ const Home = () => {
               useReducer
             </Link>
           </li>
+          <li>
+            {" "}
+            <Link
+              to="/higherOrder"
+              style={{
+                textDecoration: "none",
+                color: "blue",
+              }}
+              className={"changeColor"}
+            >
+              higherOrder
+            </Link>
+          </li>
         </ul>
       </div>
     </div>

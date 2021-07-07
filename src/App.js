@@ -5,6 +5,7 @@ import Home from "./Component/Home";
 import useMemoParent from "./Component/UseMemo/UseMemoParent";
 import UseContext from "./Component/UseContext/UseContext";
 import UseReducerParent from "./Component/UseReducer/UseReducer";
+import ChildComponent from "./Component/HigherOrderComponent/ChildComponent";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route exact path="/useMemo" component={useMemoParent} />
           <Route exact path="/useContext" component={UseContext} />
           <Route exact path="/useReducer" component={UseReducerParent} />
+          <Route exact path="/higherOrder" component={ChildComponent} />
         </Switch>
       </Router>
     </div>

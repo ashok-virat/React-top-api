@@ -42,7 +42,7 @@ const useMemoParent = () => {
 
   return (
     <div>
-      <h5>we have used usememo and usecallback in this component</h5>
+      <h2>we have used usememo and usecallback in this component</h2>
       <h1>Count:{count.count}</h1>
       <h3 style={{ color: "red" }}>{getCount}</h3>
       <button onClick={increaseCount}>InCrease Count</button>
