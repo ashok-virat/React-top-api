@@ -60,6 +60,19 @@ const Home = () => {
               higherOrder
             </Link>
           </li>
+          <li>
+            {" "}
+            <Link
+              to="/pureComponent"
+              style={{
+                textDecoration: "none",
+                color: "blue",
+              }}
+              className={"changeColor"}
+            >
+              PureComponent
+            </Link>
+          </li>
         </ul>
       </div>
     </div>

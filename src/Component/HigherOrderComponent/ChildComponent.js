@@ -36,7 +36,7 @@ const ChildComponent = () => {
   const HigherOrderComponent = HigherOrder(GrandChild);
   return (
     <div>
-      <h4>used higher order component below</h4>
+      <h3>higher order component</h3>
       {messages.map((key, index) => (
         <HigherOrderComponent
           text={key.text}
