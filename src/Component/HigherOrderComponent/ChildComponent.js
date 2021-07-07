@@ -41,7 +41,7 @@ const ChildComponent = () => {
         <HigherOrderComponent
           text={key.text}
           sentBy={key.sentBy}
-          index={index}
+          key={index}
         ></HigherOrderComponent>
       ))}
     </div>
