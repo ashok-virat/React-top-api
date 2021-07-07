@@ -19,7 +19,7 @@ const GrandChild = (props) => {
 const messages = [
   {
     text: "I love pepperoni pizza 🍕",
-    sentBy: "Billy",
+    sentBy: "Billys",
   },
   {
     text: "Hello World! 🌏",
