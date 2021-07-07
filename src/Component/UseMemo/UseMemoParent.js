@@ -48,7 +48,7 @@ const useMemoParent = () => {
       <button onClick={increaseCount}>InCrease Count</button>
       <br></br>
       <button onClick={handleUseRef} style={{ marginTop: "10px" }}>
-        useref
+        useref(see the console)
       </button>
       <UseMemoChild decreaseCount={decreaseCount}></UseMemoChild>
     </div>
