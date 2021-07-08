@@ -4,13 +4,11 @@ import HigherOrder from "./HigherOrder";
 const GrandChild = (props) => {
   return (
     <div className="message-container">
-      {props.data}
       <p>"{props.text}"</p>
       <div className="details-container">
         <small>
           Sent by <b>{props.sentBy}</b>
         </small>
-        {props.button}
       </div>
     </div>
   );
@@ -34,16 +32,25 @@ const messages = [
 const ChildComponent = () => {
   //Higher Order is a component,i have sended this grandChild component as a input that higher order component return new component
   const HigherOrderComponent = HigherOrder(GrandChild);
+  const people = [{ name: "James" }, { name: "Mark" }, { name: "Steve" }];
+
+  //we can create elemnets using react create element 
+  const element = React.createElement(
+    "p",
+    null,
+    people.map((person) =>
+      React.createElement("li", { key: person.name }, person.name)
+    )
+  );
   return (
     <div>
+      {React.createElement}
       <h3>higher order component</h3>
       {messages.map((key, index) => (
-        <HigherOrderComponent
-          text={key.text}
-          sentBy={key.sentBy}
-          key={index}
-        ></HigherOrderComponent>
+        <HigherOrderComponent text={key.text} sentBy={key.sentBy} key={index} />
       ))}
+      <h3>CreateElement</h3>
+      {element}
     </div>
   );
 };
