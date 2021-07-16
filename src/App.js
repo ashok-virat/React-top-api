@@ -7,6 +7,7 @@ import UseContext from "./Component/UseContext/UseContext";
 import UseReducerParent from "./Component/UseReducer/UseReducer";
 import ChildComponent from "./Component/HigherOrderComponent/ChildComponent";
 import PureComponent from "./Component/PureComponent/PureComponent";
+import ClassComponent from "./Component/ClassComponent/ClassComponent";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route exact path="/useReducer" component={UseReducerParent} />
           <Route exact path="/higherOrder" component={ChildComponent} />
           <Route exact path="/pureComponent" component={PureComponent} />
+          <Route exact path="/classcomponent" component={ClassComponent} />
         </Switch>
       </Router>
     </div>

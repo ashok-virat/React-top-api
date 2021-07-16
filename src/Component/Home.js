@@ -73,6 +73,19 @@ const Home = () => {
               PureComponent
             </Link>
           </li>
+          <li>
+            {" "}
+            <Link
+              to="/classcomponent"
+              style={{
+                textDecoration: "none",
+                color: "blue",
+              }}
+              className={"changeColor"}
+            >
+              ClassComponent
+            </Link>
+          </li>
         </ul>
       </div>
     </div>
